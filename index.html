@@ -6,17 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <div class="card-container">
-        <div class="little card"></div>
-        <div class="big card"></div>
-        <div class="little card"></div>
-        <div class="big card"></div>
-        <div class="little card"></div>
-        <div class="big card"></div>
-        <div class="little card"></div>
-        <div class="big card"></div>
+    <div class="card-swiper">
+        <div class="card-groups">
+
+            <div class="card-container" data-index="0" data-status="active">
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+            </div>
+            <div class="card-container" data-index="1" data-status="unknown">
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+            </div>
+            <div class="card-container" data-index="2" data-status="unknown">
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+                <div class="little card"></div>
+                <div class="big card"></div>
+            </div>
+        </div>
+        <div class="swipe-buttons">
+            <button class="dislike" onclick="handleDislikeClick()">✖️</button>
+            <button class="like" onclick="handleLikeClick()">💖</button>
+        </div>
     </div>
 </body>
 </html>
